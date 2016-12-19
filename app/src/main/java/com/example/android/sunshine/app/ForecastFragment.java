@@ -109,7 +109,7 @@ public  class ForecastFragment extends Fragment {
         return rootView;
     }
 
-    public class FetchWeatherTask extends AsyncTask<String, Void, Void> {
+    public class FetchWeatherTask extends AsyncTask<String, Void, String[]> {
 
         private final String LOG_TAG = FetchWeatherTask.class.getSimpleName();
 
@@ -212,7 +212,7 @@ public  class ForecastFragment extends Fragment {
 
         }
         @Override
-        protected Void doInBackground(String... params) {
+        protected String[] doInBackground(String... params) {
 
                  //LESSON 2
             //MAKING HTTP REQUEST
@@ -301,8 +301,26 @@ public  class ForecastFragment extends Fragment {
                     }
                 }
             }
+            //String [] is returned to onPost Method
+            try {
+                return getWeatherDataFromJson(forecastJsonStr, numDays);
+            } catch (JSONException e) {
+                Log.e(LOG_TAG, e.getMessage(), e);
+                e.printStackTrace();
+            }
             return null;
         }
+        //display data New data is back from the server.
+        @Override
+        protected void onPostExecute(String[] result) {
+            if (result != null) {
+                mForecastAdapter.clear();
+            }
+            for(String dayForecastStr : result) {
+                mForecastAdapter.add(dayForecastStr);
+            }
+        }
+
     }
 
 
