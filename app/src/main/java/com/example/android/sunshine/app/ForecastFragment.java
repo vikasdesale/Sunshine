@@ -36,13 +36,12 @@ import java.util.List;
 /**
  * A Forecast fragment containing a simple view.
  */
-public  class ForecastFragment extends Fragment {
+public class ForecastFragment extends Fragment {
 
     ArrayAdapter<String> mForecastAdapter;
 
     public ForecastFragment() {
     }
-
 
 
     @Override
@@ -58,6 +57,7 @@ public  class ForecastFragment extends Fragment {
         inflater.inflate(R.menu.forecastfragment, menu);
 
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -116,7 +116,7 @@ public  class ForecastFragment extends Fragment {
         /* The date/time conversion code is going to be moved outside the asynctask later,
       * so for convenience we're breaking it out into its own method now.
       */
-        private String getReadableDateString(long time){
+        private String getReadableDateString(long time) {
             // Because the API returns a unix timestamp (measured in seconds),
             // it must be converted to milliseconds in order to be converted to valid date.
             SimpleDateFormat shortenedDateFormat = new SimpleDateFormat("EEE MMM dd");
@@ -138,7 +138,7 @@ public  class ForecastFragment extends Fragment {
         /**
          * Take the String representing the complete forecast in JSON Format and
          * pull out the data we need to construct the Strings needed for the wireframes.
-         *
+         * <p>
          * Fortunately parsing is easy:  constructor takes the JSON string and converts it
          * into an Object hierarchy for us.
          */
@@ -174,7 +174,7 @@ public  class ForecastFragment extends Fragment {
             dayTime = new Time();
 
             String[] resultStrs = new String[numDays];
-            for(int i = 0; i < weatherArray.length(); i++) {
+            for (int i = 0; i < weatherArray.length(); i++) {
                 // For now, using the format "Day, description, hi/low"
                 String day;
                 String description;
@@ -188,7 +188,7 @@ public  class ForecastFragment extends Fragment {
                 // "this saturday".
                 long dateTime;
                 // Cheating to convert this to UTC time, which is what we want anyhow
-                dateTime = dayTime.setJulianDay(julianStartDay+i);
+                dateTime = dayTime.setJulianDay(julianStartDay + i);
                 day = getReadableDateString(dateTime);
 
                 // description is in a child array called "weather", which is 1 element long.
@@ -204,17 +204,14 @@ public  class ForecastFragment extends Fragment {
                 highAndLow = formatHighLows(high, low);
                 resultStrs[i] = day + " - " + description + " - " + highAndLow;
             }
-
-            for (String s : resultStrs) {
-                Log.v(LOG_TAG, "Forecast entry: " + s);
-            }
             return resultStrs;
 
         }
+
         @Override
         protected String[] doInBackground(String... params) {
 
-                 //LESSON 2
+            //LESSON 2
             //MAKING HTTP REQUEST
             // If there's no zip code, there's nothing to look up.  Verify size of params.
             if (params.length == 0) {
@@ -310,13 +307,14 @@ public  class ForecastFragment extends Fragment {
             }
             return null;
         }
+
         //display data New data is back from the server.
         @Override
         protected void onPostExecute(String[] result) {
             if (result != null) {
                 mForecastAdapter.clear();
             }
-            for(String dayForecastStr : result) {
+            for (String dayForecastStr : result) {
                 mForecastAdapter.add(dayForecastStr);
             }
         }
