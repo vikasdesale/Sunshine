@@ -71,6 +71,9 @@ public class FetchWeatherTask extends AsyncTask<String, Void, Void> {
                 new String[]{locationSetting},
                 null);
 
+        if(locationCursor.moveToFirst()){
+            Log.d("NOT Null","vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
+        }
         if (locationCursor.moveToFirst()) {
             int locationIdIndex = locationCursor.getColumnIndex(WeatherContract.LocationEntry._ID);
             locationId = locationCursor.getLong(locationIdIndex);
