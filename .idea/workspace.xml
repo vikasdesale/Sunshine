@@ -12,7 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="772a9a23-e69a-4de6-9060-e96f8c7e835c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java" />
     </list>
     <ignored path="Sunshine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,9 +61,11 @@
       <file leaf-file-name="DetailActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2445,7 +2446,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1924" height="1038" extended-state="1" />
+    <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2875,9 +2876,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="83" column="13" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
