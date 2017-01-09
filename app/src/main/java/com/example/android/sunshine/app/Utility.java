@@ -10,6 +10,7 @@ import android.preference.PreferenceManager;
 import android.text.format.Time;
 
 import java.text.DateFormat;
+import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -41,7 +42,7 @@ public class Utility {
         Date date = new Date(dateInMilliseconds);
         return DateFormat.getDateInstance().format(date);
     }
-    / Format used for storing dates in the database.  ALso used for converting those strings
+    // Format used for storing dates in the database.  ALso used for converting those strings
     // back into date objects for comparison/processing.
     public static final String DATE_FORMAT = "yyyyMMdd";
 

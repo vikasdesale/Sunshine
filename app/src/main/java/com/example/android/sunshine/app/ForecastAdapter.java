@@ -10,6 +10,7 @@ import android.support.v4.widget.CursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.sunshine.app.data.WeatherContract;
@@ -33,8 +34,19 @@ public class ForecastAdapter extends CursorAdapter {
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {
         View view = LayoutInflater.from(context).inflate(R.layout.list_item_forecast, parent, false);
-
-        return view;
+        int viewType = getItemViewType(cursor.getPosition());
+        int layoutId = -1;
+        switch (viewType) {
+            case VIEW_TYPE_TODAY: {
+                layoutId = R.layout.list_item_forecast_today;
+                break;
+            }
+            case VIEW_TYPE_FUTURE_DAY: {
+                layoutId = R.layout.list_item_forecast;
+                break;
+            }
+        }
+        return LayoutInflater.from(context).inflate(layoutId, parent, false);
     }
 
     /*
