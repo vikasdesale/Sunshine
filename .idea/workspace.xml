@@ -11,7 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="772a9a23-e69a-4de6-9060-e96f8c7e835c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/Utility.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/Utility.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
@@ -74,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+              <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,14 +114,18 @@
       <file leaf-file-name="Utility.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/Utility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+            <state relative-caret-position="260">
+              <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
               <folding>
                 <element signature="e#534#579#0" expanded="true" />
                 <element signature="e#597#646#0" expanded="true" />
                 <element signature="e#831#873#0" expanded="true" />
                 <element signature="e#891#936#0" expanded="true" />
                 <element signature="e#962#1007#0" expanded="true" />
+                <element signature="e#2882#2915#0" expanded="true" />
+                <element signature="e#2944#2978#0" expanded="true" />
+                <element signature="e#4316#4349#0" expanded="true" />
+                <element signature="e#4427#4463#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,8 +134,8 @@
       <file leaf-file-name="strings.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state relative-caret-position="203">
+              <caret line="102" column="27" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -140,13 +144,13 @@
       <file leaf-file-name="ForecastAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="84" column="55" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
+            <state relative-caret-position="421">
+              <caret line="104" column="45" selection-start-line="104" selection-start-column="45" selection-end-line="104" selection-end-column="45" />
               <folding>
                 <element signature="e#1653#1654#0" expanded="true" />
                 <element signature="e#1693#1694#0" expanded="true" />
-                <element signature="e#3908#3909#0" expanded="true" />
-                <element signature="e#3946#3947#0" expanded="true" />
+                <element signature="e#3926#3927#0" expanded="true" />
+                <element signature="e#3964#3965#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2899,7 +2903,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="201" column="0" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2927,35 +2931,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="84" column="55" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
+        <state relative-caret-position="421">
+          <caret line="104" column="45" selection-start-line="104" selection-start-column="45" selection-end-line="104" selection-end-column="45" />
           <folding>
             <element signature="e#1653#1654#0" expanded="true" />
             <element signature="e#1693#1694#0" expanded="true" />
-            <element signature="e#3908#3909#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
+            <element signature="e#3926#3927#0" expanded="true" />
+            <element signature="e#3964#3965#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/Utility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+        <state relative-caret-position="260">
+          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
           <folding>
             <element signature="e#534#579#0" expanded="true" />
             <element signature="e#597#646#0" expanded="true" />
             <element signature="e#831#873#0" expanded="true" />
             <element signature="e#891#936#0" expanded="true" />
             <element signature="e#962#1007#0" expanded="true" />
+            <element signature="e#2882#2915#0" expanded="true" />
+            <element signature="e#2944#2978#0" expanded="true" />
+            <element signature="e#4316#4349#0" expanded="true" />
+            <element signature="e#4427#4463#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        <state relative-caret-position="203">
+          <caret line="102" column="27" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
           <folding />
         </state>
       </provider>
