@@ -53,6 +53,7 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
     private static final int FORECAST_LOADER = 0;
     private ForecastAdapter mForecastAdapter;
 
+    private boolean mUseTodayLayout;
     private ListView mListView;
     private int mPosition = ListView.INVALID_POSITION;
 
@@ -184,9 +185,15 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
             // swapout in onLoadFinished.
             mPosition = savedInstanceState.getInt(SELECTED_KEY);
         }
-
+        mForecastAdapter.setUseTodayLayout(mUseTodayLayout);
         return rootView;
 
+    }
+    public void setUseTodayLayout(boolean useTodayLayout) {
+        mUseTodayLayout = useTodayLayout;
+        if (mForecastAdapter != null) {
+            mForecastAdapter.setUseTodayLayout(mUseTodayLayout);
+        }
     }
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
