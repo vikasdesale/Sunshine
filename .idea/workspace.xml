@@ -14,16 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="772a9a23-e69a-4de6-9060-e96f8c7e835c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/service/SunshineService.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/Utility.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/Utility.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/sync/SunshineSyncAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/sync/SunshineSyncAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <ignored path="Sunshine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ForecastFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ForecastFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="224" column="42" selection-start-line="224" selection-start-column="42" selection-end-line="224" selection-end-column="42" />
+            <state relative-caret-position="633">
+              <caret line="72" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="266" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,24 +83,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SunshineSyncAdapter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SunshineSyncAdapter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/sync/SunshineSyncAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+            <state relative-caret-position="326">
+              <caret line="355" column="26" selection-start-line="355" selection-start-column="26" selection-end-line="355" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8499#8514#0" expanded="true" />
-                <element signature="e#13014#13064#0" expanded="true" />
-                <element signature="e#14095#14131#0" expanded="true" />
-                <element signature="e#14237#14284#0" expanded="true" />
-                <element signature="e#17485#17530#0" expanded="true" />
-                <element signature="e#18551#18596#0" expanded="true" />
-                <element signature="e#19330#19366#0" expanded="true" />
-                <element signature="e#19368#19413#0" expanded="true" />
-                <element signature="e#20592#20637#0" expanded="true" />
-                <element signature="e#20831#20832#0" expanded="true" />
-                <element signature="e#20870#20871#0" expanded="true" />
+                <element signature="e#8756#8771#0" expanded="true" />
+                <element signature="e#13271#13321#0" expanded="true" />
+                <element signature="e#14352#14388#0" expanded="true" />
+                <element signature="e#14494#14541#0" expanded="true" />
+                <element signature="e#19444#19489#0" expanded="true" />
+                <element signature="e#20510#20555#0" expanded="true" />
+                <element signature="e#21289#21325#0" expanded="true" />
+                <element signature="e#21327#21372#0" expanded="true" />
+                <element signature="e#22551#22596#0" expanded="true" />
+                <element signature="e#22790#22791#0" expanded="true" />
+                <element signature="e#22829#22830#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1894,10 +1885,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/sync/SunshineSyncAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/Utility.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/sync/SunshineSyncAdapter.java" />
       </list>
     </option>
   </component>
@@ -3168,27 +3159,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/sync/SunshineSyncAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8499#8514#0" expanded="true" />
-            <element signature="e#13014#13064#0" expanded="true" />
-            <element signature="e#14095#14131#0" expanded="true" />
-            <element signature="e#14237#14284#0" expanded="true" />
-            <element signature="e#17485#17530#0" expanded="true" />
-            <element signature="e#18551#18596#0" expanded="true" />
-            <element signature="e#19330#19366#0" expanded="true" />
-            <element signature="e#19368#19413#0" expanded="true" />
-            <element signature="e#20592#20637#0" expanded="true" />
-            <element signature="e#20831#20832#0" expanded="true" />
-            <element signature="e#20870#20871#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1766">
@@ -3207,10 +3177,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="224" column="42" selection-start-line="224" selection-start-column="42" selection-end-line="224" selection-end-column="42" />
+        <state relative-caret-position="633">
+          <caret line="72" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="266" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/sync/SunshineSyncAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="355" column="26" selection-start-line="355" selection-start-column="26" selection-end-line="355" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8756#8771#0" expanded="true" />
+            <element signature="e#13271#13321#0" expanded="true" />
+            <element signature="e#14352#14388#0" expanded="true" />
+            <element signature="e#14494#14541#0" expanded="true" />
+            <element signature="e#19444#19489#0" expanded="true" />
+            <element signature="e#20510#20555#0" expanded="true" />
+            <element signature="e#21289#21325#0" expanded="true" />
+            <element signature="e#21327#21372#0" expanded="true" />
+            <element signature="e#22551#22596#0" expanded="true" />
+            <element signature="e#22790#22791#0" expanded="true" />
+            <element signature="e#22829#22830#0" expanded="true" />
           </folding>
         </state>
       </provider>
