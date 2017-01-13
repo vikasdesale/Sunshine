@@ -10,6 +10,8 @@ import android.net.Uri;
 import android.provider.BaseColumns;
 import android.text.format.Time;
 
+import java.util.Date;
+
 /**
  * Defines table and column names for the weather database.
  */
@@ -41,6 +43,8 @@ public class WeatherContract {
         int julianDay = Time.getJulianDay(startDate, time.gmtoff);
         return time.setJulianDay(julianDay);
     }
+
+
 
     /*
         Inner class that defines the table contents of the location table
