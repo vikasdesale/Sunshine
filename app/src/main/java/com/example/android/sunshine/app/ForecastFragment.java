@@ -30,7 +30,6 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.android.sunshine.app.data.WeatherContract;
-import com.example.android.sunshine.app.service.SunshineService;
 import com.example.android.sunshine.app.sync.SunshineSyncAdapter;
 
 import org.json.JSONArray;
