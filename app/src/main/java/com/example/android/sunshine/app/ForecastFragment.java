@@ -31,6 +31,8 @@ import android.widget.Toast;
 
 import com.example.android.sunshine.app.data.WeatherContract;
 import com.example.android.sunshine.app.service.SunshineService;
+import com.example.android.sunshine.app.sync.SunshineSyncAdapter;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -136,7 +138,7 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
         return super.onOptionsItemSelected(item);
     }
     private void updateWeather() {
-        Intent intent = new Intent(getActivity(), SunshineService.class);
+        /*Intent intent = new Intent(getActivity(), SunshineService.class);
         intent.putExtra(SunshineService.LOCATION_QUERY_EXTRA,
                 Utility.getPreferredLocation(getActivity()));
         getActivity().startService(intent);
@@ -149,7 +151,8 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
         AlarmManager am=(AlarmManager)getActivity().getSystemService(Context.ALARM_SERVICE);
 
 //Set the AlarmManager to wake up the system.
-        am.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 5000, pi);
+        am.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 5000, pi);*/
+        SunshineSyncAdapter.syncImmediately(getActivity());
     }
 
     // since we read the location when we create the loader, all we need to do is restart things
