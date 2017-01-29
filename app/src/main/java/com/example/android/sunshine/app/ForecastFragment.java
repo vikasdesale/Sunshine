@@ -26,6 +26,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -59,7 +60,7 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
 
     private boolean mUseTodayLayout;
     private ListView mListView;
-    private int mPosition = ListView.INVALID_POSITION;
+    private int mPosition = GridView.INVALID_POSITION;
 
     private static final String SELECTED_KEY = "selected_position";
 
@@ -273,7 +274,7 @@ public class ForecastFragment extends Fragment implements LoaderManager.LoaderCa
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         mForecastAdapter.swapCursor(cursor);
-        if (mPosition != ListView.INVALID_POSITION) {
+        if (mPosition != GridView.INVALID_POSITION) {
             // If we don't need to restart the loader, and there's a desired position to restore
             // to, do so now.
             mListView.smoothScrollToPosition(mPosition);

@@ -14,7 +14,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SyncRequest;
 import android.content.SyncResult;
+import android.content.res.Resources;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -40,8 +43,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Vector;
 
 public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
@@ -296,12 +297,12 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                 ContentValues[] cvArray = new ContentValues[cVVector.size()];
                 cVVector.toArray(cvArray);
                 getContext().getContentResolver().bulkInsert(WeatherContract.WeatherEntry.CONTENT_URI, cvArray);
-                Calendar cal = Calendar.getInstance(); //Get's a calendar object with the current time.
-                cal.add(Calendar.DATE, -1); //Signifies yesterday's date
-                String yesterdayDate =""+System.currentTimeMillis();
+
+                // delete old data so we don't build up an endless history
                 getContext().getContentResolver().delete(WeatherContract.WeatherEntry.CONTENT_URI,
                         WeatherContract.WeatherEntry.COLUMN_DATE + " <= ?",
-                        new String[] {yesterdayDate});
+                        new String[] {Long.toString(dayTime.setJulianDay(julianStartDay-1))});
+
                 notifyWeather();
             }
 
@@ -312,7 +313,6 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
             e.printStackTrace();
         }
     }
-
 
     private void notifyWeather() {
         Context context = getContext();
@@ -343,6 +343,9 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                     String desc = cursor.getString(INDEX_SHORT_DESC);
 
                     int iconId = Utility.getIconResourceForWeatherCondition(weatherId);
+                    Resources resources = context.getResources();
+                    Bitmap largeIcon = BitmapFactory.decodeResource(resources,
+                            Utility.getArtResourceForWeatherCondition(weatherId));
                     String title = context.getString(R.string.app_name);
 
                     // Define the text of the forecast.
@@ -355,7 +358,9 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                     // notifications.  Just throw in some data.
                     NotificationCompat.Builder mBuilder =
                             new NotificationCompat.Builder(getContext())
+                                    .setColor(resources.getColor(R.color.sunshine_light_blue))
                                     .setSmallIcon(iconId)
+                                    .setLargeIcon(largeIcon)
                                     .setContentTitle(title)
                                     .setContentText(contentText);
 
@@ -381,16 +386,16 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                     // WEATHER_NOTIFICATION_ID allows you to update the notification later on.
                     mNotificationManager.notify(WEATHER_NOTIFICATION_ID, mBuilder.build());
 
-
                     //refreshing last sync
                     SharedPreferences.Editor editor = prefs.edit();
                     editor.putLong(lastNotificationKey, System.currentTimeMillis());
                     editor.commit();
                 }
+                cursor.close();
             }
         }
-
     }
+
     /**
      * Helper method to handle insertion of a new location in the weather database.
      *
